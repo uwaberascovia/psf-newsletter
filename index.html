@@ -47,7 +47,7 @@
       padding: 24px 12px;
     }
     .email-container {
-      max-width: 680px;
+      width: min(1000px, calc(100% - 24px));
       margin: 0 auto;
       background-color: #ffffff;
       border-radius: 16px;
@@ -435,6 +435,8 @@
 
     /* Responsive */
     @media only screen and (max-width: 600px) {
+      .email-wrapper { padding: 16px 10px; }
+      .email-container { width: min(100%, calc(100% - 20px)); }
       .header-title { font-size: 36px !important; }
       .header-sub { font-size: 18px !important; }
       .header-card { padding: 26px 20px !important; }
@@ -446,6 +448,7 @@
       .stat-cell { display: block !important; width: 100% !important; border-right: 0 !important; border-bottom: 1px solid #edf2ee !important; }
       .stat-cell:last-child { border-bottom: 0 !important; }
       .two-col-cell { display: block !important; width: 100% !important; padding: 0 0 12px 0 !important; }
+      .btn-primary, .btn-outline { display: inline-block; width: auto; max-width: 100%; }
     }
   </style>
 </head>
